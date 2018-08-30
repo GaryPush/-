@@ -1,5 +1,5 @@
 class Solution:
-
+    ''' 随机生成迷宫 '''
     def buildMaze(self, m, n):
         maze = [[1 for _ in range(n)] for _ in range(m)]
         start = (0,0)
