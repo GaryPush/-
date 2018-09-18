@@ -1,5 +1,5 @@
 # leetcode-notes
-# leetcode
+## leetcode
 
-# other
+## other
 * [Randomly generate a maze.](https://github.com/garypush/leetcode-notes/blob/master/maze.py)
