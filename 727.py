@@ -1,4 +1,5 @@
 class Solution(object):
+    ''' https://leetcode.com/problems/minimum-window-subsequence/description/'''
     def minWindow(self, S, T):
         """
         dp[i][j] means the smallest end index of the substring in S[i:] and T[j:]
