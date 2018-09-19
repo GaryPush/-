@@ -1,4 +1,5 @@
 class Solution(object):
+    ''' 难点在于dp[i][j]的定义 '''
     def minWindow(self, S, T):
         """
         dp[i][j] means the smallest end index of the substring in S[i:] and T[j:]
