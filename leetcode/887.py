@@ -1,5 +1,9 @@
 class Solution1:
-    ''' O(KN^2) '''
+    ''' 
+    O(KN^2) 
+    For every floor i in 1..N, calculate the max moves required between broken or not broken.
+    The result is the minimum of the max moves.
+    '''
     def superEggDrop(self, K, N):
         """
         :type K: int
@@ -34,10 +38,11 @@ class Solution2:
     ''' 
     O(KlogN) 
     When I have m-1 moves and k-1 eggs, I can check dp[m-1][k-1] floors.
-    But when I get 1 more move and 1 more egg, I start at floor dp[m-1][k-1]+1, because I know
+    But when I get 1 more move and 1 more egg, I drop an egg at floor dp[m-1][k-1]+1, because I know
     floors below that can be checked within m-1 moves and k-1 eggs.
-    The best outcome is that the egg is not broken, we can then start from there and check dp[m-1][k]
-    more floors.
+    The worst case is that the egg is not broken, because if the egg is broken, the search is done
+    since any floor aboved yields broken egg. Therefore we can then start from dp[m-1][k-1]+1 and 
+    check dp[m-1][k] more floors.
     So the maximum floors I can check with m moves and k eggs is dp[m-1][k-1]+dp[m-1][k]+1
     '''
     def superEggDrop(self, K, N):
