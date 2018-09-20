@@ -35,9 +35,10 @@ class Solution2:
     O(KlogN) 
     When I have m-1 moves and k-1 eggs, I can check dp[m-1][k-1] floors.
     But when I get 1 more move and 1 more egg, I start at floor dp[m-1][k-1]+1, because I know
-    floor below that can be checked within m-1 moves and k-1 eggs.
+    floors below that can be checked within m-1 moves and k-1 eggs.
     The best outcome is that the egg is not broken, we can then start from there and check dp[m-1][k]
     more floors.
+    So the maximum floors I can check with m moves and k eggs is dp[m-1][k-1]+dp[m-1][k]+1
     '''
     def superEggDrop(self, K, N):
         '''
