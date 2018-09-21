@@ -1,5 +1,5 @@
 class Solution:
-    ''' 0 means empty cell, 1 means wall ''
+    ''' 0 means empty cell, 1 means wall '''
     
     def buildMaze(self, m, n):
         ''' Generate a maze. '''
