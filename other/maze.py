@@ -1,5 +1,13 @@
 class Solution:
-    ''' 0 means empty cell, 1 means wall '''
+    ''' 
+    Requirements:
+    1. A maze is represented by an m*n matrix with 0s and 1s. 0 means empty cell, 1 means wall .
+    2. The starting point is at (0, 0) and the goal is (m-1, n-1)
+    3. There is exactly one path from start to goal.
+    4. There are multiple paths that lead to dead ends.
+    5. No intersection.
+    6. The function "buildMaze" should return random maze at every execution.
+    '''
     
     def buildMaze(self, m, n):
         ''' Generate a maze. '''
