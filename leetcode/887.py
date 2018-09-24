@@ -1,6 +1,8 @@
 class Solution1:
     ''' 
-    O(KN^2) 
+    time: O(KN^2) 
+    space: O(KN)
+    
     For every floor i in 1..N, calculate the max moves required between broken or not broken.
     The result is the minimum of the max moves.
     '''
@@ -36,7 +38,8 @@ class Solution1:
 
 class Solution2:
     ''' 
-    O(KlogN) 
+    time: O(KlogN) 
+    space: O(KN)
     When I have m-1 moves and k-1 eggs, I can check dp[m-1][k-1] floors.
     But when I get 1 more move and 1 more egg, I drop an egg at floor dp[m-1][k-1]+1, because I know
     floors below that can be checked within m-1 moves and k-1 eggs.
