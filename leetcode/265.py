@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution1(object):
     '''
     time: O(knlog(kn))
     space: O(kn)
@@ -28,7 +28,7 @@ class Solution(object):
                 if i != col:
                     heappush(pq, [cost+costs[row+1][i],row+1,i])
 
-class Solution(object):
+class Solution2(object):
     '''
     time: O(kn)
     space: O(1)
