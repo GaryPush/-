@@ -1,5 +1,8 @@
 class Solution1(object):
-    ''' Memory limit exceeded '''
+    '''  
+    Start from (sx,sy) to (tx,ty)
+    Memory limit exceeded 
+    '''
     def reachingPoints(self, sx, sy, tx, ty):
         """
         :type sx: int
@@ -42,7 +45,7 @@ class Solution2(object):
             return False
         if sx == tx and sy == ty: # found target
             return True
-        if tx > ty: # since sx,sy > 0
+        if tx > ty: # since sx,sy must > 0
             tx -= max(1, (tx-sx)//ty) * ty
         else:
             ty -= max(1, (ty-sy)//tx) * tx
