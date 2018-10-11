@@ -12,7 +12,7 @@ class Solution1(object):
         self.cache = [[None for _ in range(m+1)] for _ in range(len(nums)+1)]
         return self.memo(nums, 0, m)
         
-    def helper(self, nums, start, m):
+    def minimax(self, nums, start, m):
         if m == 1:
             return sum(nums[start:])
         if m == len(nums)-start:
@@ -29,7 +29,7 @@ class Solution1(object):
             
     def memo(self, nums, start, m):
         if self.cache[start][m] == None:
-            self.cache[start][m] = self.helper(nums, start, m)
+            self.cache[start][m] = self.minimax(nums, start, m)
         return self.cache[start][m]
 
 class Solution2(object):
