@@ -1,6 +1,6 @@
 class Solution1(object):
     '''
-    Memoization
+    minimax+memoization
     O(mn^2)
     '''
     def splitArray(self, nums, m):
@@ -34,7 +34,7 @@ class Solution1(object):
 
 class Solution2(object):
     '''
-    Binary search
+    binary search
     O(Nlog(sum of nums))
     '''
     def splitArray(self, nums, m):
