@@ -8,5 +8,6 @@ Notes and Python solution of questions from leetcode and interviews.
 * [265. Paint House II](https://github.com/garypush/leetcode-notes/blob/master/leetcode/265.py) ([source](https://leetcode.com/problems/paint-house-ii/))
 * [780. Reaching Points](https://github.com/garypush/leetcode-notes/blob/master/leetcode/780.py) ([source](https://leetcode.com/problems/reaching-points/description/))
 * [410. Split Array Largest Sum](https://github.com/garypush/leetcode-notes/blob/master/leetcode/410.py) ([source](https://leetcode.com/problems/split-array-largest-sum/description/))
+* [301. Remove Invalid Parentheses] (https://github.com/garypush/leetcode-notes/blob/master/leetcode/301.py) ([source](https://leetcode.com/problems/remove-invalid-parentheses/description/))
 ## other
 * [Randomly generate a maze.](https://github.com/garypush/leetcode-notes/blob/master/other/maze.py)
