@@ -3,7 +3,7 @@ class Solution(object):
     先得到的hp可以抵消后扣除的hp， 但是先扣除的hp不能被后得到的hp抵消。
     所以如果dfs(row,col)<0, 表示会后得到hp，但是因为后得到的hp不能用来抵消
     先扣除的hp，所以后得到的hp在这里没有意义。
-    所以return res if res > 0 else 1要放在dfs里
+    所以return res if res > 0 else 1要放在dfs里来修正负值。
     '''
 
     def calculateMinimumHP(self, dungeon):
