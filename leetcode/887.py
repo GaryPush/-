@@ -45,7 +45,7 @@ class Solution2:
     floors below that can be checked within m-1 moves and k-1 eggs.
     The worst case is that the egg is not broken, because if the egg is broken, the search is done
     since any floor aboved yields broken egg. Therefore we can then start from dp[m-1][k-1]+1 and 
-    check dp[m-1][k] more floors without checking the below floor.
+    check dp[m-1][k] above floors without checking the below floor.
     So the maximum floors I can check with m moves and k eggs is dp[m-1][k-1]+dp[m-1][k]+1
     '''
     def superEggDrop(self, K, N):
